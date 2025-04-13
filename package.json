@@ -1,0 +1,60 @@
+{
+	"name": "tanstack-start-example-basic",
+	"private": true,
+	"sideEffects": false,
+	"type": "module",
+	"scripts": {
+		"dev": "vinxi dev --host",
+		"build": "vinxi build",
+		"start": "vinxi start",
+		"setup": "npm i && husky init"
+	},
+	"dependencies": {
+		"@mantine/core": "^7.17.3",
+		"@mantine/hooks": "^7.17.3",
+		"@tanstack/react-router": "^1.114.22",
+		"@tanstack/react-router-devtools": "^1.114.22",
+		"@tanstack/react-start": "^1.114.22",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"redaxios": "^0.5.1",
+		"tailwind-preset-mantine": "^2.0.5",
+		"unenv": "^1.10.0",
+		"vinxi": "^0.5.3"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.22.0",
+		"@tailwindcss/postcss": "^4.1.3",
+		"@types/node": "^22.5.4",
+		"@types/react": "^19.0.8",
+		"@types/react-dom": "^19.0.3",
+		"autoprefixer": "^10.4.20",
+		"eslint-config-prettier": "^10.1.2",
+		"eslint-plugin-prettier": "^5.2.3",
+		"eslint-plugin-unused-imports": "^4.1.4",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.5.0",
+		"postcss": "^8.5.3",
+		"postcss-preset-mantine": "^1.17.0",
+		"postcss-simple-vars": "^7.0.1",
+		"prettier": "^3.5.3",
+		"tailwindcss": "^4.1.3",
+		"typescript": "^5.7.2",
+		"typescript-eslint": "^8.26.1",
+		"vite-plugin-image-optimizer": "^1.1.8",
+		"vite-plugin-remove-console": "^2.2.0",
+		"vite-plugin-svgr": "^4.3.0",
+		"vite-tsconfig-paths": "^5.1.4"
+	},
+	"prettier": {
+		"singleQuote": true,
+		"semi": false,
+		"useTabs": true,
+		"endOfLine": "auto"
+	},
+	"lint-staged": {
+		"*.{ts,tsx}": [
+			"eslint --fix"
+		]
+	}
+}
