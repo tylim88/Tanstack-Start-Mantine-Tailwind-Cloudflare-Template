@@ -8,13 +8,14 @@ yarn.lock
 .vercel
 .output
 .vinxi
+.wrangler
 
 /build/
 /dist/
 /api/
 /server/build
 /public/build
-.vinxi
+
 # Sentry Config File
 .env.sentry-build-plugin
 /test-results/
