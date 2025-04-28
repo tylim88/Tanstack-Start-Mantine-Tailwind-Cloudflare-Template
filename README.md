@@ -6,7 +6,7 @@ Optional: Run `npm run setup` to setup the commit hook
 
 Dev: `npm run dev`  
 Build: `npm run build`  
-Start: `npm start`  
+Start: `npm start` (Note: If you are not using Cloudflare, please change the Start command to `npm run build && vinxi start` in package.json)
 
 Ready to deploy on Cloudflare:
 
