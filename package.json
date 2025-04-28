@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "vinxi dev --host",
 		"build": "vinxi build",
-		"start": "vinxi start",
+		"start": "npm run build && npx wrangler pages dev ",
 		"setup": "npm i && husky init"
 	},
 	"dependencies": {

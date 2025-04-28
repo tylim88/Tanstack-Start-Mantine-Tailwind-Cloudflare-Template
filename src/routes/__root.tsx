@@ -16,7 +16,7 @@ import {
 	ColorSchemeScript,
 	mantineHtmlProps,
 } from '@mantine/core'
-import 'tailwind-preset-mantine'
+import css from './__root.css?url'
 
 const theme = createTheme({
 	/** Put your mantine theme override here */
@@ -58,6 +58,10 @@ export const Route = createRootRoute({
 			},
 			{ rel: 'manifest', href: '/site.webmanifest', color: '#fffff' },
 			{ rel: 'icon', href: '/favicon.ico' },
+			{
+				rel: 'stylesheet',
+				href: css,
+			},
 		],
 	}),
 	errorComponent: (props) => {
