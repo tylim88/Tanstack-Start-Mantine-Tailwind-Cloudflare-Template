@@ -9,6 +9,10 @@ export default defineConfig({
 	tsr: {
 		appDirectory: 'src',
 	},
+	// if don't want to use cloudflare, use this setting instead
+	// server: {
+	// 	preset: 'node-server',
+	// },
 	server: {
 		preset: 'cloudflare-pages',
 		unenv: cloudflare,
