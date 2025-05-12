@@ -1,4 +1,10 @@
 import {
+	ColorSchemeScript,
+	MantineProvider,
+	createTheme,
+	mantineHtmlProps,
+} from '@mantine/core'
+import {
 	HeadContent,
 	Link,
 	Outlet,
@@ -6,16 +12,10 @@ import {
 	createRootRoute,
 } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
-import * as React from 'react'
+import type * as React from 'react'
 import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary'
 import { NotFound } from '~/components/NotFound'
 import { seo } from '~/utils/seo'
-import {
-	createTheme,
-	MantineProvider,
-	ColorSchemeScript,
-	mantineHtmlProps,
-} from '@mantine/core'
 import css from './__root.css?url'
 
 const theme = createTheme({
@@ -35,7 +35,8 @@ export const Route = createRootRoute({
 			...seo({
 				title:
 					'TanStack Start | Type-Safe, Client-First, Full-Stack React Framework',
-				description: `TanStack Start is a type-safe, client-first, full-stack React framework. `,
+				description:
+					'TanStack Start is a type-safe, client-first, full-stack React framework. ',
 			}),
 		],
 		links: [

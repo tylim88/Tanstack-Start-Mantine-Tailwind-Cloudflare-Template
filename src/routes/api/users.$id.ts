@@ -8,7 +8,7 @@ export const APIRoute = createAPIFileRoute('/api/users/$id')({
 		console.info(`Fetching users by id=${params.id}... @`, request.url)
 		try {
 			const res = await axios.get<User>(
-				'https://jsonplaceholder.typicode.com/users/' + params.id,
+				`https://jsonplaceholder.typicode.com/users/${params.id}`,
 			)
 
 			return json({

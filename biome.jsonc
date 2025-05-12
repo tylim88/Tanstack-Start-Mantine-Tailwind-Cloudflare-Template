@@ -1,0 +1,11 @@
+{
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"semicolons": "asNeeded"
+		}
+	},
+	"files": {
+		"ignore": ["src/routeTree.gen.ts"]
+	}
+}

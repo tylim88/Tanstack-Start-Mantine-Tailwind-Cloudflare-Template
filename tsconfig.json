@@ -1,6 +1,7 @@
 {
 	"include": ["**/*.ts", "**/*.tsx"],
 	"compilerOptions": {
+		"noEmit": true,
 		"strict": true,
 		"esModuleInterop": true,
 		"jsx": "react-jsx",
@@ -17,7 +18,6 @@
 		"baseUrl": ".",
 		"paths": {
 			"~/*": ["./src/*"]
-		},
-		"noEmit": true
+		}
 	}
 }

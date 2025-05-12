@@ -8,7 +8,6 @@
 	"files.readonlyInclude": {
 		"**/routeTree.gen.ts": true
 	},
-	"editor.formatOnSave": true,
 	"cssVariables.lookupFiles": [
 		"**/*.css",
 		"**/*.scss",
@@ -20,5 +19,16 @@
 		"package.json": "package-lock.json",
 		"*.ts": "$(capture).*.ts",
 		"vite.config.ts": "vitest.config.ts"
+	},
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "biomejs.biome",
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
 	}
 }

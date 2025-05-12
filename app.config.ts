@@ -1,9 +1,9 @@
 import { defineConfig } from '@tanstack/react-start/config'
-import tsConfigPaths from 'vite-tsconfig-paths'
-import removeConsole from 'vite-plugin-remove-console'
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
-import svgr from 'vite-plugin-svgr'
 import { cloudflare } from 'unenv'
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
+import removeConsole from 'vite-plugin-remove-console'
+import svgr from 'vite-plugin-svgr'
+import tsConfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
 	tsr: {
